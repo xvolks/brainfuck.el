@@ -71,7 +71,7 @@
 
 (mapcar #'char-to-op "+-<>[].,")
 
-(eros-mode)
+;; (eros-mode)
 
 ;; Test that the char-to-op returns the expected data.
 (let ((assert (funcall (char-to-op ?+) 69) ))
