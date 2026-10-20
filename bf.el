@@ -189,9 +189,10 @@
 
 (defun main ()
   "Creates CPU, ask for input file, parse the source and runs the code."
-
+  (interactive)
   (setq source-name (read-file-name "Source filename:" (expand-file-name "./samples/") nil t))
-  ;;  (message "filename: %s\n" source-name)
+  (setq source-name (concat (expand-file-name "./samples/") source-name))
+  (message "filename: %s\n" source-name)
 
 
   ;; Read the source code from file
